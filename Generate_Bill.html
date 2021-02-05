@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Bill Generation Form</title>
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "Style2.css" >
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+h1 {
+    text-align:center;
+}
+</style>
+</head>
+<body>
+<ul>
+  <li><a class="active" href="Admin_Module.html">Home</a></li>
+  <li><a href="Shedule_Appointment.html">Schedule Appointment</a></li>
+  <li><a href="Generate_Bill.html">Generate Bill</a></li>
+  <li><a href="Logout.html">Logout</a></li>
+</ul>
+<h1>Bill Generation Form</h1>
+<form action="Generate_Bill" method="post">
+<label>Name</label>
+<input type="text" size=30 name="name">
+<br>
+<label>Address</label>
+<textarea rows="5" cols="25" name="address"></textarea>
+<br>
+<label>Phone Number</label>
+<input type="text" size=30 name="phone">
+<br>
+<label>Email</label>
+<input type="text" size=30 name="email">
+<br>
+<label>Age</label>
+<input type="text" size=30 name="age">
+<br>
+<label>Consultant</label>
+<input type="text" size=30 name="consultant">
+<br>
+<label>Admission Date</label>
+<input type="text" size=30 name="ad">
+<br>
+<label>Discharge Date</label>
+<input type="text" size=30 name="dd">
+<br>
+<label>Particular</label>
+<textarea rows="5" cols="30" name="particular"></textarea>
+<br>
+<label>Quantity</label>
+<input type="text" size=30 name="qty">
+<br>
+<label>Rate</label>
+<input type="text" size=30 name="rate">
+<br>
+<input type="submit" value="Generate Bill" >
+</form>
+</body>
+</html>

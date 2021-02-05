@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Patient Schedule</title>
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "Style2.css" >
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+h1 {
+    text-align:center;
+}
+</style>
+</head>
+<body>
+<ul>
+  <li><a class="active" href="Patient_Module.html">Home</a></li>
+  <li><a href="Patient_Schedule.html">Schedule</a></li>
+  <li><a href="Patient_Report.html">Report</a></li>
+  <li><a href="Patient_Bill.html">Bill</a></li>
+  <li><a href="Logout.html">Logout</a></li>
+</ul>
+<h1>Patient Schedule</h1>
+<form action="Patient_Schedule" method="post">
+<label>Name</label>
+<input type="text" size=30 name="name">
+<br>
+<input type="submit" value="View Schedule">
+</form>
+</body>
+</html>

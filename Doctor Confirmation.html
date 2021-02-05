@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Doctor Confirmation</title>
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "Style2.css" >
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+h1 {
+    text-align:center;
+}
+</style>
+</head>
+<body>
+<ul>
+  <li><a class="active" href="Doctor_Module.html">Home</a></li>
+  <li><a href="Doctor_Schedule.html">Schedule</a></li>
+  <li><a href="Doctor Confirmation.html">Confirm Schedule</a></li>
+  <li><a href="Diagonist_Report.html">Diagonist Report</a></li>
+  <li><a href="Logout.html">Logout</a></li>
+</ul>
+<h1>Doctor Confirmation Form </h1>
+<form action="Doctor_Confirmation" method="post">
+<label>Enter Name</label>
+<input type="text" size=30 name="name">
+<br>
+<label>Patient Name</label>
+<input type="text" size=30 name="p_name">
+<br>
+<label>Enter Date of Appointment</label>
+<input type="text" size=30 name="date">
+<br>
+<input type="submit" value="Confirm">
+</form>
+</body>
+</html>

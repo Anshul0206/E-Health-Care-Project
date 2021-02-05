@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Admin Registration Form</title>
+<link rel = "stylesheet"
+   type = "text/css"
+   href = "Style2.css" >
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+h1 {
+    text-align:center;
+}
+</style>
+</head>
+<body>
+<div class="dropdown">
+  <button class="dropbtn">Registration</button>
+  <div class="dropdown-content">
+  <a href="Create_Admin.html">Admin</a>
+  <a href="Doctor_Registration.html">Doctor</a>
+  <a href="Patient_Registration.html">Patient</a>
+  </div>
+</div>
+<div class="dropdown">
+  <button class="dropbtn">Login</button>
+  <div class="dropdown-content">
+  <a href="Admin_Login.html">Admin</a>
+  <a href="Doctor_Login.html">Doctor</a>
+  <a href="Patient_Login.html">Patient</a>
+  </div>
+</div>
+<h1>Admin Registration Form</h1>
+<form action="Create_Admin" method="post">
+<label>Admin Name</label>
+<input type="text" size=30 name="name">
+<br>
+<label>Email</label>
+<input type="text" size=30 name="email">
+<br>
+<label>Admin Password</label>
+<input type="password" size=30 name="pass">
+<br>
+<label>Address</label>
+<input type="text" size=30 name="address">
+<br>
+<label>DOB</label>
+<input type="date" size=30 name="dob">
+<br>
+<label>Sex</label>
+<br>
+<label>Male</label>
+<input type="Radio" name="sex" value="Male">
+<br>
+<label>Female</label>
+<input type="Radio" name="sex" value="Female">
+<br>
+<label>Other</label>
+<input type=Radio name="sex" value="Other">
+<br>
+<br>
+<label>Role</label>
+<textarea rows="5" cols="30" name="role"></textarea>
+<br>
+<input type="submit" value=Register>
+</form>
+</body>
+</html>
